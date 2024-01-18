@@ -13,7 +13,7 @@ const resetGame = () => {
     // Ressetting game variables and UI elements
     correctLetters = [];
     wrongGuessCount = 0;
-    hangmanImage.src = "images/2.png";
+    hangmanImage.src = "images/a1.png";
     guessesText.innerText = `${wrongGuessCount} / ${maxGuesses}`;
     wordDisplay.innerHTML = currentWord.split("").map(() => `<li class="letter"></li>`).join("");
     keyboardDiv.querySelectorAll("button").forEach(btn => btn.disabled = false);
@@ -54,22 +54,22 @@ const initGame = (button, clickedLetter) => {
         newCount = wrongGuessCount;
         switch (newCount){
             case 1:
-                hangmanImage.src = "images/3.png";
+                hangmanImage.src = "images/a1.png";
                 break;
             case 2:
-                hangmanImage.src = "images/4.png";
+                hangmanImage.src = "images/a2.png";
                 break;
             case 3:
-                hangmanImage.src = "images/5.png";
+                hangmanImage.src = "images/a3.png";
                 break;
             case 4:
-                hangmanImage.src = "images/6.png";
+                hangmanImage.src = "images/a4.png";
                 break;
             case 5:
-                hangmanImage.src = "images/7.png";
+                hangmanImage.src = "images/a5.png";
                 break;
             case 6: 
-                hangmanImage.src = "images/8.png";
+                hangmanImage.src = "images/a6.png";
                 break;
         }
         

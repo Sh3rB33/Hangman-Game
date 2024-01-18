@@ -1,10 +1,11 @@
-/* Importing Google font - Open Sans */
+/* Importing Google fonts */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 body {
     display: flex;
@@ -12,22 +13,33 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: #5E63BA;
+    /* background: #1E3226; */
+    background-image: url(images/bg1.jpeg);
 }
+body h4{
+    color: #CCB363;
+}
+body h1{
+    color: #C27E35;
+}
+
 .container {
     display: flex;
     width: 850px;
     gap: 70px;
     padding: 60px 40px;
-    background: #fff;
+    background: #76290B;
+    /* background-image: url(images/bg2.jpeg); */
     border-radius: 10px;
     align-items: flex-end;
     justify-content: space-between;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 20px rgba(85, 64, 64, 0.1);
 }
 .hangman-box img {
     user-select: none;
-    max-width: 270px;
+    width: 250px;
+    height: 300px;
+
 }
 .hangman-box h1 {
     font-size: 1.45rem;
@@ -50,7 +62,7 @@ body {
     font-weight: 600;
     margin-bottom: 40px;
     text-transform: uppercase;
-    border-bottom: 3px solid #000;
+    border-bottom: 3px solid #FBEDC0;
 }
 .word-display .letter.guessed {
     margin: -40px 0 35px;
@@ -76,7 +88,7 @@ body {
     justify-content: center;
 }
 :where(.game-modal, .keyboard) button {
-    color: #fff;
+    color: #FBEDC0;
     border: none;
     outline: none;
     cursor: pointer;
@@ -84,7 +96,7 @@ body {
     font-weight: 600;
     border-radius: 4px;
     text-transform: uppercase;
-    background: #5E63BA;
+    background: #1E3226;
 }
 .keyboard button {
     padding: 7px;
@@ -95,7 +107,7 @@ body {
     opacity: 0.6;
 }
 :where(.game-modal, .keyboard) button:hover {
-    background: #8286c9;
+    background: #335440;
 }
 .game-modal {
     position: fixed;
@@ -123,7 +135,8 @@ body {
     max-width: 420px;
     width: 100%;
     border-radius: 10px;
-    background: #fff;
+    background:  #132019;
+    /* background-image: url(images/bg2.jpeg); */
     text-align: center;
     box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
@@ -136,14 +149,16 @@ body {
 }
 .game-modal h4 {
     font-size: 1.53rem;
+    color: #C27E35;
 }
 .game-modal p {
     font-size: 1.15rem;
     margin: 15px 0 30px;
     font-weight: 500;
+    color:  #76290B;
 }
 .game-modal p b {
-    color: #5E63BA;
+    color: #CCB363;
     font-weight: 600;
 }
 .game-modal button {
